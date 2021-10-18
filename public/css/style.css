@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+   
 }
 
 .navbar {
@@ -85,6 +86,7 @@ p {
 
 .header {
     background: radial-gradient(#fff, #ffd6d6);
+    
 }
 
 .header .row {

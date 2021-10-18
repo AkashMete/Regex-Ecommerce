@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex-Ecom | Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #e2e2e2, #c9d6ff) no-repeat fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg {
+  background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-371678.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  padding-bottom: 100%;
+}
+
+.frame {
+  background-color: #fff;
+}
+
+.padded {
+  padding: 0 2rem;
+}
+
+.level.fill-height {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-6:first-child {
+  padding-left: 0;
+}
+
+.col-6:last-child {
+  padding-right: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  padding: 0 0.5rem;
+}
+
+.btn-info {
+  margin-left: 1rem;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="header">
+        
+        {{>navbar}}
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Give Your Workout <br> A New Style!</h1>
+                    <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains
+                        success. Greatness will come.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero fullscreen">
+            <div class="hero-body">
+                <div style="margin: auto">
+                    <form class="frame p-0" method="post">
+                        <div class="frame__body p-0">
+                            <div class="row p-0 level fill-height">
+                                <div class="col">
+                                    <div class="space xlarge"></div>
+                                    <div class="padded">
+                                        <h1 class="u-text-center u-font-alt">Contact Us</h1>
+                                        <div class="divider"></div>
+                                        <p class="u-text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <div class="divider"></div>
+
+                                        <div class="form-group">
+                                            <label class="form-group-label">
+                                                <span class="icon">
+                                                    <i class="fa-wrapper far fa-user"></i>
+                                                </span>
+                                            </label>
+                                            <input type="text" class="form-group-input" placeholder="Enter your name" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-group-label">
+                                                <span class="icon">
+                                                    <i class="fa-wrapper far fa-envelope"></i>
+                                                </span>
+                                            </label>
+                                            <input type="email" class="form-group-input" placeholder="Enter your email" />
+                                        </div>
+
+                                        <div class="form-section section-inline">
+                                            <div class="section-body row">
+                                                <div class="form-group col-6 pl-0">
+                                                    <label class="form-group-label">
+                                                        <span class="icon">
+                                                            <i class="fa-wrapper far fa-calendar"></i>
+                                                        </span>
+                                                    </label>
+                                                    <input type="date" class="form-group-input" placeholder="Enter your birthday (or not)" />
+                                                </div>
+                                                <div class="form-group col-6 pr-0">
+                                                    <label class="form-group-label">
+                                                        <span class="icon">
+                                                            <i class="fa-wrapper fas fa-list"></i>
+                                                        </span>
+                                                    </label>
+                                                    <select class="select form-group-input" placeholder="Choose one">
+                                                        <option>Bug Report</option>
+                                                        <option>Feature Request</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <textarea placeholder="Tell us what's wrong"></textarea>
+
+                                        <div class="form-ext-control form-ext-checkbox">
+                                            <input id="check1" class="form-ext-input" type="checkbox">
+                                            <label class="form-ext-label" for="check1">Send me a copy.</label>
+                                        </div>
+
+                                        <div class="space"></div>
+
+                                        <div class="btn-group u-pull-right">
+                                            <button class="btn-info">Send</button>
+                                        </div>
+
+                                    </div>
+                                    <div class="space xlarge"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+         {{>footer}}
+
+</body>
