@@ -18,7 +18,7 @@ const getProducts = (categories, category) => {
 }
 
 const getCategories = async () => {
-    const products_json = await fetch(`/api/v1/admin/products/`);
+    const products_json = await fetch(`/api/v1/products/`);
     const products = (await products_json.json()).products;
 
     categories = {};

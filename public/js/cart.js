@@ -1,5 +1,5 @@
 const updateCartTotal = () => {
-    total = 0;
+    total = 150;
     const totalPrice = document.getElementById("total_price");
     const cartProductsTr = document.getElementsByClassName('cart_products_tr');
     Array.from(cartProductsTr).forEach(cartProductTr => {
@@ -36,16 +36,16 @@ const displayCartProducts = async () => {
                     <tr class="cart_products_tr">
                         <td>
                             <div class="cart-info">
-                                <img src="${product.image_url}">
+                                <img class="product_image" src="${product.image_url}">
                                 <div>
-                                    <p>${product.name}</p>
-                                    <small>Price: ₹ ${product.price}</small>
+                                    <p class="product_name">${product.name}</p>
+                                    <small>Price: ₹ <span class="product_price">${product.price}</span></small>
                                     <br>
                                     <a style="cursor: pointer;" onclick="removeCartProduct('${product._id}');">Remove</a>
                                 </div>
                             </div>
                         </td>
-                        <td><input onchange="updateQuantity(event, '${product._id}', '${product.price}');" type="number" value="1" min="1" max="10"></td>
+                        <td><input class="product_quantity" onchange="updateQuantity(event, '${product._id}', '${product.price}');" type="number" value="1" min="1" max="10"></td>
                         <td id="${product._id}">₹ ${product.price}</td>
                     </tr>
                 `
@@ -65,10 +65,7 @@ const displayCartProducts = async () => {
             totalPriceTable.style.display = 'none';
 
             cartProducts.innerHTML = `
-                                        <h2 style="text-align: center;
-                                                   padding: 80px 0px;
-                                                   background-color: #7cbf03;
-                                                   border-radius: 10px;">Cart is Empty!!</h2>
+                                        <img width="100%" height="100%" src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg">
                                      `
         }
     } else {
@@ -76,10 +73,7 @@ const displayCartProducts = async () => {
         totalPriceTable.style.display = 'none';
 
         cartProducts.innerHTML = `
-                                    <h2 style="text-align: center;
-                                               padding: 80px 0px;
-                                               background-color: #7cbf03;
-                                               border-radius: 10px;">Cart is Empty!!</h2>
+                                    <img width="100%" height="100%" src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg">
                                  `
     }
     updateCartTotal();

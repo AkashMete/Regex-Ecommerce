@@ -86,6 +86,17 @@ app.get("/checkout/", (req, res) => {
         });
 });
 
+app.get("/about/", (req, res) => {
+    const {
+        token
+    } = req.cookies;
+    if (token === undefined) res.redirect("/account/");
+    else
+        res.render("team", {
+            loggedIn: true,
+        });
+});
+
 app.get("/products/", (req, res) => {
     const {
         token

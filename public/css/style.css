@@ -12,7 +12,6 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    padding: 20px;
 }
 
 nav {
@@ -31,7 +30,7 @@ nav ul li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #555;
 }
 
@@ -86,11 +85,6 @@ p {
 
 .header {
     background: radial-gradient(#fff, #ffd6d6);
-    
-}
-
-.header .row {
-    margin-top: 70px;
 }
 
 .categories {
@@ -401,10 +395,6 @@ input:focus {
 }
 
 /* Cart Items */
-.cart-page {
-    margin: 80px auto;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
